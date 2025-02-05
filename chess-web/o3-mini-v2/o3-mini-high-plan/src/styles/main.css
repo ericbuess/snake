@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  width: 320px; /* 8 squares * 40px each */
+  margin: 20px;
+  border: 2px solid #333;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  /* Add a small border to distinguish squares */
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.light-square {
+  background-color: #f0d9b5;
+}
+
+.dark-square {
+  background-color: #b58863;
+}
+
+.square.selected {
+  outline: 3px solid red;
+}
+
+.piece {
+  font-size: 18px;
+}
+
+.move-history {
+  margin: 20px;
+  max-width: 300px;
+}
+
+.move-history ul {
+  list-style: none;
+  padding-left: 0;
+}

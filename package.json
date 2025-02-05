@@ -1,0 +1,16 @@
+{
+  "name": "chess-web-app",
+  "version": "1.0.0",
+  "description": "A fully featured browser-based chess game",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  }
+}

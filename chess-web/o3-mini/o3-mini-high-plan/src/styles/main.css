@@ -1,0 +1,65 @@
+/* Basic styling for the chess app */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Board styling */
+.board {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #333;
+}
+
+.board-row {
+  display: flex;
+}
+
+/* Square styling */
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-square {
+  background-color: #eee;
+}
+
+.dark-square {
+  background-color: #666;
+}
+
+/* Piece styling */
+.piece {
+  width: 50px;
+  height: 50px;
+  pointer-events: none; /* Allow drag/click handling on the parent square */
+}
+
+/* Move History */
+.move-history {
+  max-height: 480px;
+  overflow-y: auto;
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fff;
+}

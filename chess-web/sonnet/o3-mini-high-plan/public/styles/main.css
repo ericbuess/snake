@@ -1,0 +1,67 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.chess-board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 560px;
+  height: 560px;
+  border: 2px solid #333;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.square.light {
+  background-color: #f0d9b5;
+}
+
+.square.dark {
+  background-color: #b58863;
+}
+
+.piece {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.square.selected {
+  background-color: #7b61ff;
+}
+
+.square.valid-move {
+  position: relative;
+}
+
+.square.valid-move::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.move-history {
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
